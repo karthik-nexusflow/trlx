@@ -22,10 +22,13 @@ The following RL algorithms are currently implemented:
 
 ```bash
 git clone https://github.com/CarperAI/trlx.git
+docker run -it --gpus all --shm-size 1g -v /absolute/path/to/trlx:/workspace/trlx huggingface/transformers-pytorch-deepspeed-latest-gpu:latest@sha256:804f6d64cbf541577f3604b61eb67d689b7bacf15c1d998088547ec81ff01f47
 cd trlx
 pip install torch --extra-index-url https://download.pytorch.org/whl/cu118
 pip install -e .
 ```
+
+
 
 ## Examples
 
